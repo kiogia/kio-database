@@ -1,0 +1,23 @@
+{
+  "name": "kio-database",
+  "version": "1.0.1",
+  "description": "A simple module for storing and managing data",
+  "main": "kio-database.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "database"
+  ],
+  "author": "Kio Gia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiogia/kio-database.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiogia/kio-database/issues"
+  },
+  "homepage": "https://github.com/kiogia/kio-database#readme"
+}
