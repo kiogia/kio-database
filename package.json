@@ -1,6 +1,6 @@
 {
   "name": "kio-database",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple module for storing and managing data",
   "main": "kio-database.js",
   "type": "module",

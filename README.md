@@ -2,12 +2,12 @@
 
 Just installing module
 ```bash
-$ npm install kio-databse
+$ npm install kio-databаse
 ```
 
 # Quick start
 
-Creating file with 
+Creating file with .kiod extention
 ```js
 import { KioDatabase } from 'kio-database'
 const kd = new KioDatabase('example.kiod')
@@ -21,16 +21,19 @@ kd.addColumn('id', 'number', {
 
 // or multi-adding columns
 
-kd.addColumns([{
-  name: 'name',
-  type: 'string',
-  default: 'No Name',
-  unique: true
-}, {
-  name: 'suranme',
-  type: 'string',
-  unique: true
-}])
+kd.addColumns([
+  {
+    name: 'id',
+    type: 'number',
+    unique: true
+  }, {
+    name: 'name',
+    type: 'string',
+    default: 'No Name'
+  }, {
+    name: 'surname'
+  }
+])
 ```
 
 Insert, update and delete data from table 
@@ -84,12 +87,7 @@ kd.getAll
 // returns []
 ```
 
-# Classes
-
-## kdatabase
-
-Soon... 
-
-## Visualizer
-
-Soon... 
+## Table visualize with markdown file
+```js
+kd.toFile('my-database')
+```
